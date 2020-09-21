@@ -5,6 +5,13 @@
 
 ---
 ---
+## 1.1.1.1
+### Enhancement
+* `All slides`
+    * Login page no longer in the dom after login
+---
+---
+
 ## 1.1.1.0
 ### Enhancement
 * `All slides`
