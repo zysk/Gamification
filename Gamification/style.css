@@ -1,0 +1,61 @@
+.s1{
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+input{
+  background: none !important;
+  border-radius: 10px !important;
+  border: 3px solid !important;
+  height: 50px !important;
+  /* width: 31px !important; */
+}
+@media (max-width: 500px),(max-height: 600px) {
+ .form-control{
+  margin-left: 0em !important;
+ }
+ .messageBox{
+  position: relative;
+  top: 0.1em !important; 
+}
+iframe{
+      width: 250px !important;
+      height: 150px !important;
+}
+}
+/* label{
+  font-size: 18px !important;
+} */
+input:hover{
+  border-color: yellow !important;
+  transition: 0.35s !important;
+}
+form{
+  width: 460px !important;
+}
+.fp-controlArrow.fp-prev{
+  margin-left: 10%;
+}
+.fp-controlArrow.fp-next{
+  margin-right: 10%;
+}
+.s2{
+  background-image: url('bg2.jpg');
+  background-size: cover;
+}
+.mBot{
+  width: 300px;
+}
+.messageBox{
+  position: relative;
+  top: 10vh;
+}
+.sam{
+  right: 1em;
+  bottom: 1em;
+}
