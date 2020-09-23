@@ -52,11 +52,7 @@
 					<!-- <input type="hidden" name="visited" value="" /> -->
 				</form>
 			</div>
-			<div class="container-fluid my-5">
-				<div class="row messageBox mx-2 p-2 float-right bg-primary rounded-circle">
-					<i class="fa-4x far fa-envelope text-light p-2"></i>
-				</div>
-			</div>
+		
 		</div>
 
 		<div class="section s2 d-none cintro" id="target">
@@ -68,7 +64,8 @@
 							<img src="img_avatar.png" width="80" height="80" class="rounded-circle  mx-auto d-block"
 								alt="avatar-of-a-man">
 						</li>
-						<li data-step="2"
+						<li data-toggle="modal" data-target="#exampleModal"
+						    data-step="2"
 							data-intro="Learning path or map :- shows where you has reached in this course "
 							class="pb-2" href="#" role="button">
 							<img src="map.png" width="80" height="80" class="rounded-circle  mx-auto d-block"
@@ -83,33 +80,41 @@
 					</ul>
 				</div>
 			</div>
+			<div class="chatButton">
+				<img data-step="4" data-intro="ChatBot :- Any questions regarding anything can be asked hear :)"
+					src="chat.jpg" width="80" height="80" class="rounded-circle sam position-absolute " href="#"
+					role="button" alt="Chat-icon">
+			</div>
+
+			<div class="slide">
+				<div class="img1 rounded rounded-circle ">
+					<img src="download1.jpg"width="100" height="100" class=" rounded-circle rou position-relative mx-auto d-block" alt="Modo-img">
+				</div>
+			</div>
 			<div class="slide 6">
 				<div class="container">
 				<div class="row ">
 					<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
 						<img class="mBot" src="mBot (1).png">
 					</div>
-					<div class="col-lg-6 col-md-6 ss">
-						<div class="bg-danger rounded">
-							<h3 class="p-4">Today we will explore the jungle</h3>
+					<div class="col-lg-6 col-md-6 ">
+						<div class="bg-danger rounded dialog">
+							<h3 class="p-4  test">Today we will explore the jungle</h3>
 						</div>
 					</div>
 					
 				</div>
 			 </div>
 			</div>
-			I will show you how
-								robots are used in
-								jungles to care for
-								animals.
+		
 			<div class="slide 7">
 				<div class="container">
 				<div class="row ">
 					<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
 						<img class="mBot" src="mBot (1).png">
 					</div>
-					<div class="col-lg-6 col-md-6 ss">
-						<div class="bg-danger rounded">
+					<div class="col-lg-6 col-md-6 ">
+						<div class="bg-danger rounded dialog">
 							<h3 class="p-4">I will show you how
 								robots are used in
 								jungles to care for
@@ -127,8 +132,8 @@
 					<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
 						<img class="mBot" src="mBot (1).png">
 					</div>
-					<div class="col-lg-6 col-md-6 ss">
-						<div class="bg-danger rounded">
+					<div class="col-lg-6 col-md-6 ">
+						<div class="bg-danger rounded dialog">
 							<h3 class="p-4">And also take close-up
 								pictures of them, where
 								humans might be
@@ -147,7 +152,7 @@
 						<img class="mBot" src="mBot (1).png">
 					</div>
 					<div class="col-lg-6 col-md-6 ss">
-						<div class="bg-danger rounded">
+						<div class="bg-danger rounded dialog">
 							<h3 class="p-4">Click on the map to get started</h3>
 						</div>
 					</div>
@@ -163,15 +168,16 @@
 						</div>
 						<div class="col-lg-6 col-md-6 ">
 							<div class="row">
-							<div class="bg-danger rounded">
+							<div class="bg-danger rounded dialog">
 								<h3 class="p-4">Meet our jungle photographer</h3>
 							</div></div>
 							<div class="row">
-								<img class="mBot" src="mBot (1).png">
+								<img class="boy" src="boy.png">
 							</div>
 						</div>
 						
 					</div>
+				</div>	
 			</div>
 			<div class="slide 11" >
 				<div class="container">
@@ -181,25 +187,26 @@
 						</div>
 						<div class="col-lg-6 col-md-6 ">
 							<div class="row">
-							<div class="bg-primary rounded">
+							<div class="bg-primary rounded dialog">
 								<h3 class="p-4">Hi xxxx!!I will show you how to shoot animals real close using automated rovers.</h3>
 							</div></div>
 							<div class="row">
-								<img class="mBot" src="mBot (1).png">
+								<img class="boy" src="boy.png">
 							</div>
 						</div>
 						
 					</div>
+				</div>	
 			</div>
 			<div class="slide 12" >
 				<div class="container">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
-							<img class="mBot" src="mBot (1).png">
+							<img class="boy" src="boy.png">
 						</div>
 						<div class="col-lg-6 col-md-6 ">
 							<div class="row">
-							<div class="bg-primary rounded">
+							<div class="bg-primary rounded dialog">
 								<h3 class="p-4">But first watch these lessons to get basic knowledge on robots.</h3>
 							</div></div>
 							<div class="row">
@@ -208,13 +215,14 @@
 						</div>
 						
 					</div>
+				</div>	
 			</div>
 			<div class="slide 13-14" >
 				<div class="container">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6">
 							<div class="row m-4">
-								<div class="bg-primary rounded">
+								<div class="bg-primary rounded dialog">
 									<h3 class="p-4">In this lesson,you will learn about what is a robot and its various uses and how it can be assembled.Enjoy</h3>
 								</div>
 							</div>
@@ -233,10 +241,11 @@
 						</div>
 						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
 							
-							<img class="mBot" src="mBot (1).png">
+							<img class="boy" src="boy.png">
 						</div>
 						
 					</div>
+				</div>	
 			</div>
 			<div class="slide 15">
 				<div class="container">
@@ -245,7 +254,7 @@
 						<img class="mBot" src="mBot (1).png">
 					</div>
 					<div class="col-lg-6 col-md-6 ">
-						<div class="bg-danger rounded">
+						<div class="bg-danger rounded dialog">
 							<h3 class="p-4">Great! You've completed 1st level of this path.You have earned 5000 points!Wow!</h3>
 						</div>
 					</div>
@@ -260,7 +269,7 @@
 						<img class="mBot" src="mBot (1).png">
 					</div>
 					<div class="col-lg-6 col-md-6 ">
-						<div class="bg-danger rounded">
+						<div class="bg-danger rounded dialog">
 							<h3 class="p-4">You can click on the map anytime to see how much you have progressed in the course</h3>
 						</div>
 					</div>
@@ -268,32 +277,99 @@
 				</div>
 			</div>
 			</div>
-			<!-- <div class="slide 19 change">
+			<div class="slide 19 ">
 				<div class="container">
 				<div class="row ">
 					<div class="col-lg-6 col-md-6">
-						<img class="mBot" src="mBot (1).png">
+						<img class="mBot_smol" src="boy.png">
 					</div>
 					<div class="col-lg-6 col-md-6 ">
-						<div class="bg-danger rounded">
-							<h3 class="p-4">You can click on the map anytime to see how much you have progressed in the course</h3>
+						<div class="row"><div class="bg-danger rounded dialogFar">
+							<h5 class="p-4">See this ostrich,very dangerous to go closer.For this we use automated rover with high powered camera.</h5>
+						</div></div>
+						<div class="row">
+							<img src="ostrich.png" class="bigOstrich">
 						</div>
 					</div>
 					
 				</div>
-			</div> still working on this slide --> 
+			</div> 
 			</div>
-			
-			<div class="row">
-				<div class="chatButton">
-					<img data-step="4" data-intro="ChatBot :- Any questions regarding anything can be asked hear :)"
-						src="chat.jpg" width="80" height="80" class="rounded-circle sam position-absolute" href="#"
-						role="button" alt="Chat-icon">
+			<div class="slide 20 ">
+				<div class="container">
+				<div class="row ">
+					<div class="col-lg-6 col-md-6">
+						<img class="mBot_smol" src="boy.png">
+					</div>
+					<div class="col-lg-6 col-md-6 ">
+						<div class="row"><div class="bg-danger rounded dialogFar">
+							<h5 class="p-4">So, what is a rover?To know more,click on the video player.</h5>
+						</div></div>
+						<div class="row">
+							<img src="ostrich.png" class="bigOstrich">
+						</div>
+					</div>
+					
 				</div>
+			</div> 
 			</div>
+			<div class="slide 22 ">
+				<div class="container">
+				<div class="row ">
+					<div class="col-lg-6 col-md-6">
+						<img class="mBot_smol" src="boy.png">
+					</div>
+					<div class="col-lg-6 col-md-6 ">
+						<div class="row"><div class="bg-danger rounded dialogFar">
+							<h5 class="p-4">Hey,if you get stuck or need help,click on the chat button.There's always someone to help you.</h5>
+						</div></div>
+						<div class="row">
+							<img src="ostrich.png" class="bigOstrich">
+						</div>
+					</div>
+					
+				</div>
+			</div> 
+			</div>
+			<div class="slide 24">
+			  <div class="container">
+               <div class="row">
+				   <div class="col-lg-6 col-md-6">
+					<img class="mBot_huge" src="boy.png">
+				   </div>
+				   <div class="col-lg-6 col-md-6">
+					<div class="row bg-danger rounded dialog my-4" ><h5 class="p-4">I hope you understood the concept of auto rovers.Good luck with your journey to the next level.</h5></div>
+				</div>
+			  </div>	
+			 </div>
+			</div>
+		 
+		
+			
+			
+			
+				
 		</div>
 	</div>
+	<!-- Modal for chat-->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<img class="chatbtn" src="mobilechat.jpg" alt="chatbot" width="400" height="450">
+		  </div>
+		</div>
+	  </div>
 
+  <!-- Modal for map way-->
+  <div class="modal fade mape" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content mape">
+		<img class="mape" src="learing-path.jpg" alt="map-of-path" width="800" height="450">
+	  </div>
+	</div>
+  </div>
+
+   <!--Modal for points-->
 	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -400,17 +476,7 @@
 
 			 
 			}
-		// 	// if (document.myForm.visited.value == "") {
-		// 	// 	// This is a fresh page load
-		// 	// 	alert(document.myForm.visited.value)
-		// 	// 	document.myForm.visited.value = "3";
-				
-		// 	// 	// You may want to add code here special for
-		// 	// 	// fresh page loads
-		// 	// } else {
-		// 	// 	$(".s1").addClass("d-none");
-			   
-		// }
+		
 
 	
        

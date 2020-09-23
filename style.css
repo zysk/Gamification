@@ -40,11 +40,16 @@ form{
   margin-right: 10%;
 }
 .s2{
-  background-image: url('bg2.jpg');
+  background-image: url('bg.jpg');
   background-size: cover;
 }
 .mBot{
   width: 300px;
+
+}
+.boy{
+  width: 300px;
+  height: 800px;
 }
 .messageBox{
   position: relative;
@@ -57,8 +62,47 @@ form{
 .side-nav{
   list-style: none;
 }
-.change{
-  background-image: url('ostrich.jpg');
-  background-size: cover;
-}
 
+
+.dialog{
+  position: relative !important;
+  right: 6rem !important;
+}
+.bigOstrich{
+  width: 380px;
+}
+.mBot_smol{
+  width: 200px;
+}
+.dialogFar{
+  position: relative !important;
+  right: 19rem !important;
+}
+.mBot_huge{
+  width: 700px;
+}
+@media (max-width: 1024px),(max-height: 700px) {
+  .dialogFar{
+    position: relative !important;
+    right: 10rem !important;
+  }
+  .bigOstrich{
+    width: 340px;
+  }
+  .mBot_huge{
+    width: 500px;
+   
+  }
+.mape{
+  border-radius: 40px !important;
+}
+.rou{
+  position: relative;
+  bottom: 8em;
+  align-items: center !important;
+  right: 3.5em;
+}
+.dialog{
+  position: relative !important;
+  right: 0rem !important;
+}

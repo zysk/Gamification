@@ -2,6 +2,15 @@
 
 ## Version structure followed:
 ` ProductVersion . Major Features/Enhancement . Minor Features/Enhancement . BugsResolved `
+---
+---
+## 1.1.2.0
+### Enhancement
+* `All slides`
+    * All slides complete.
+---
+---
+
 
 ---
 ---
