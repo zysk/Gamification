@@ -112,7 +112,20 @@ form{
 }
 }
 .textApp{
+  
   position: absolute;
   bottom: 5rem;
   right: 2rem;
+}
+.x{
+  border-radius: 25px !important;
+}
+.textBox_message{
+  width: 370px !important;
+}
+.lavender{
+  background-color:  #DD2a7b;
+}
+.colorLavender{
+ color: #DD2a7b;
 }
