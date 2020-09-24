@@ -2,10 +2,16 @@
 
 ## Version structure followed:
 ` ProductVersion . Major Features/Enhancement . Minor Features/Enhancement . BugsResolved `
-## 1.1.2.0
-    ### Enhancement
-    * `All slides`
-        * intro js bug fixed.
+
+## 1.1.4.0
+### Enhancement
+* `2nd slide`
+    * Fixed chatButton
+
+## 1.1.3.0
+### Enhancement
+* `All slides`
+    * intro js bug fixed.
 ---
 ---
 ## 1.1.2.0
