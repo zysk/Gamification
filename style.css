@@ -55,8 +55,8 @@ form{
   position: relative;
   top: 10vh;
 }
-.sam{
-  right: 1em;
+.chat{
+  left: 2em;
   bottom: 1em;
 }
 .side-nav{
@@ -80,6 +80,10 @@ form{
 }
 .mBot_huge{
   width: 700px;
+}
+.messageBox{
+  height: 8em !important;
+  width: 5em !important;
 }
 @media (max-width: 1024px),(max-height: 700px) {
   .dialogFar{
@@ -105,4 +109,10 @@ form{
 .dialog{
   position: relative !important;
   right: 0rem !important;
+}
+}
+.textApp{
+  position: absolute;
+  bottom: 5rem;
+  left: 2rem;
 }
