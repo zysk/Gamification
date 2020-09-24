@@ -77,11 +77,6 @@
 		
 		</div>
 	<div class="section s2 d-none cintro" id="target">
-
-		<div 
-			class="section s2 d-none cintro" 
-			id="target"
-		>
 			<div class="row align-content-md-end rounded float-left side-nav position-relative my-5 py-4">
 				<div class="col-lg-12">
 					<ul class="side-nav position-relative">
@@ -259,6 +254,7 @@
 					</div>
 				</div>	
 			</div>
+
 			<div class="slide 12" >
 				<div class="container">
 					<div class="row ">
@@ -278,6 +274,7 @@
 					</div>
 				</div>	
 			</div>
+
 			<div class="slide 13-14" >
 				<div class="container">
 					<div class="row ">
@@ -404,26 +401,23 @@
 			  </div>	
 			 </div>
 			</div>
-		 
 		
-			<div class="chatButton">
-				<img 
-					data-step="4" 
-					data-intro="ChatBot :- Any questions regarding anything can be asked hear :)"
-					src="chat.jpg" 
-					width="80" 
-					height="80" 
-					class="rounded-circle  chat position-absolute d-block" 
-					href="#"
-					role="button" 
-					alt="Chat-icon"
-					data-toggle="modal"
-					data-target="#exampleModalLong"
-				>
-			</div>
-			
-				
 		</div>
+	</div>
+	<div class="chatButton">
+		<img 
+			data-step="4" 
+			data-intro="ChatBot :- Any questions regarding anything can be asked hear :)"
+			src="chat.jpg" 
+			width="80" 
+			height="80" 
+			class="rounded-circle  chat position-fixed d-block" 
+			href="#"
+			role="button" 
+			alt="Chat-icon"
+			data-toggle="modal"
+			data-target="#exampleModalLong"
+		>
 	</div>
 	<!-- Modal for chat-->
 	<div 
@@ -631,8 +625,8 @@
 				$(".s1").addClass("d-none");
 				$(".s2").removeClass("d-none");
 				localStorage.setItem("loggedIn","yes");
-				
-
+				var introguide = introJs();
+				introguide.start()
 			}
 			return false;
 		}
@@ -643,6 +637,8 @@
               if(localStorage.getItem('loggedIn')=='yes') {
 				$(".s1").addClass("d-none");
 				$(".s2").removeClass("d-none");
+				var introguide = introJs();
+				introguide.start()
 			  }
 			  else {
 				$(".s1").removeClass("d-none");

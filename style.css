@@ -56,7 +56,7 @@ form{
   top: 10vh;
 }
 .chat{
-  left: 2em;
+  right: 2em;
   bottom: 1em;
 }
 .side-nav{
@@ -114,5 +114,5 @@ form{
 .textApp{
   position: absolute;
   bottom: 5rem;
-  left: 2rem;
+  right: 2rem;
 }
