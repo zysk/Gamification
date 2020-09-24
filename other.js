@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // introJs(".cintro").start();
 
+=======
+>>>>>>> 7036398117cbc1fba62de39ba3f80a70d6a5c8ac
 var introguide = introJs();
 
 
