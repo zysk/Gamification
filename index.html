@@ -464,15 +464,42 @@
 								</h6>
 							</div>
 						</div>
-						<div class="row d-none appear justify-content-end my-2" >
-							<div class="lavender text-white py-2 float-right x my-4 ">
+						<div class="row d-none appear justify-content-end mt-2" >
+							<div class="lavender text-white py-2 float-right x ">
 								<h6 class="m-2 dm">
 									Help me first?
 								</h6>
 							</div>
 							<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
 						</div>
-					
+						<div class="row d-none appear2 justify-content-end" >
+							<div class="lavender text-white py-2 float-right x my-1 mr-4">
+								<h6 class="m-2 dm2">
+									Help me first?
+								</h6>
+							</div>
+						</div>
+						<div class="row d-none appear3 justify-content-end" >
+							<div class="lavender text-white py-2 float-right x my-1 mr-4">
+								<h6 class="m-2 dm3">
+									Help me first?
+								</h6>
+							</div>
+						</div>
+						<div class="row d-none appear4 justify-content-end" >
+							<div class="lavender text-white py-2 float-right x my-1 mr-4">
+								<h6 class="m-2 dm4">
+									Help me first?
+								</h6>
+							</div>
+						</div>
+						<div class="row d-none appear5 justify-content-end" >
+							<div class="lavender text-white py-2 float-right x my-1 mr-4">
+								<h6 class="m-2 dm5">
+									Help me first?
+								</h6>
+							</div>
+						</div>
 						<div class="row">
 							<form 
 								class="form-inline mt-4 x"
@@ -612,7 +639,7 @@
 		function myFun() {
 			var username = document.forms["myForm"]["fname"].value;
 			var pass = document.forms["myForm"]["fpass"].value;
-
+            
 			if (username == "" || pass == "") {
 				alert('No blank values allowed');
 				return false;
@@ -644,13 +671,47 @@
 			  }
 		}
 			
-       
+		var i=1;
 	     function texting() {
-		 var k=document.forms["userTexts"]["userMessag"].value;
-          $('.dm').text(k);
-		  $('.appear').removeClass('d-none');
-		  $('.appear').addClass('d-flex');
-          document.forms["userTexts"]["userMessag"].value="";
+			
+			 switch(i){
+				 case 1:var k=document.forms["userTexts"]["userMessag"].value;
+         				$('.dm').text(k);
+		  				$('.appear').removeClass('d-none');
+		  				$('.appear').addClass('d-flex');
+          				document.forms["userTexts"]["userMessag"].value="";
+						i=2;
+						break;
+				case 2:var k=document.forms["userTexts"]["userMessag"].value;
+         				$('.dm2').text(k);
+		  				$('.appear2').removeClass('d-none');
+		  				$('.appear2').addClass('d-flex');
+          				document.forms["userTexts"]["userMessag"].value="";
+						i=3;
+						break;	
+				case 3:var k=document.forms["userTexts"]["userMessag"].value;
+         				$('.dm3').text(k);
+		  				$('.appear3').removeClass('d-none');
+		  				$('.appear3').addClass('d-flex');
+          				document.forms["userTexts"]["userMessag"].value="";
+						i=4;
+						break;
+				case 4:var k=document.forms["userTexts"]["userMessag"].value;
+         				$('.dm4').text(k);
+		  				$('.appear4').removeClass('d-none');
+		  				$('.appear4').addClass('d-flex');
+          				document.forms["userTexts"]["userMessag"].value="";
+						i=5;
+						break;		
+				case 5:var k=document.forms["userTexts"]["userMessag"].value;
+         				$('.dm5').text(k);
+		  				$('.appear5').removeClass('d-none');
+		  				$('.appear5').addClass('d-flex');
+          				document.forms["userTexts"]["userMessag"].value="";
+						i=6;
+						break;					
+			 }
+		 
 		 }
 		   	   
      
