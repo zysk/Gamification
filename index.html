@@ -440,7 +440,7 @@
 			 <div class="modal-header lavender x">
 					<h5 class="modal-title text-white" 
 						id="exampleModalLabel"
-					><i class="fas fa-arrow-left mr-2"></i>
+					><i class="fas fa-arrow-left mr-2" data-dismiss="modal"></i>
 						Michelle
 					</h5>
 			     </div>	
@@ -464,25 +464,21 @@
 								</h6>
 							</div>
 						</div>
-						<div class="row d-flex justify-content-end my-2" >
+						<div class="row d-none appear justify-content-end my-2" >
 							<div class="lavender text-white py-2 float-right x my-4 ">
-								<h6 class="m-2">
+								<h6 class="m-2 dm">
 									Help me first?
 								</h6>
 							</div>
 							<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
 						</div>
-						<div class="row my-2">
-							<div class="d-flex align-self-center mx-2 colorLavender">
-								<i class="fas fa-user-alt"></i></div>
-							<div class="lavender text-white py-2 float-right x my-4 ">
-								<h6 class="m-2">
-									Help and all later.First tell me about yourself
-								</h6>
-							</div>
-						</div>
+					
 						<div class="row">
-							<form class="form-inline mt-4 x">
+							<form 
+								class="form-inline mt-4 x"
+								name="userTexts"	
+							>
+
 								<div class="form-group mx-sm-3 mb-2">
 								  <label 
 									  for="inputPassword2" 
@@ -490,13 +486,14 @@
 									  	Password
 								   </label>
 								  <input 
+								    name="userMessag"
 								  	type="text" 	
-									class="form-control textBox_message border-0 shadow-lg" 
+									class="form-control textBox_message border-0 shadow-lg myText" 
 									id="inputPassword2" 
 									placeholder="Enter Message"
 								>
 								</div>
-								<i class="fas fa-2x fa-paper-plane colorLavender" ></i>
+								<i class=" btn fas fa-2x fa-paper-plane colorLavender" onclick="texting()"></i>
 						  </form>
 						</div>
 					</div>
@@ -648,8 +645,15 @@
 		}
 			
        
-	
-    //   
+	     function texting() {
+		 var k=document.forms["userTexts"]["userMessag"].value;
+          $('.dm').text(k);
+		  $('.appear').removeClass('d-none');
+		  $('.appear').addClass('d-flex');
+          document.forms["userTexts"]["userMessag"].value="";
+		 }
+		   	   
+     
 
 	</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
