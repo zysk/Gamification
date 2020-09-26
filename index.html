@@ -436,15 +436,15 @@
 			class="modal-dialog textApp " 
 			role="document"
 		>
-		  <div class="modal-content x">
-			 <div class="modal-header lavender x">
+		  <div class="modal-content x chatScroll">
+			 <div class="modal-header lavender x sticky-top">
 					<h5 class="modal-title text-white" 
 						id="exampleModalLabel"
 					><i class="fas fa-arrow-left mr-2" data-dismiss="modal"></i>
 						Michelle
 					</h5>
 			     </div>	
-					<div class="container">
+					<div class="container ">
 						<div class="col">
 							<div class="row d-flex justify-content-end my-2">
 								<div class="lavender text-white py-2 my-4 x">
@@ -464,101 +464,22 @@
 								</h6>
 							</div>
 						</div>
-						<div class="row d-none appear1 justify-content-end mt-2" >
+						<div class="row d-flex appear1 justify-content-end mt-2" >
 							<div class="lavender text-white py-2 float-right x ">
 								<h6 class="m-2 dm1">
-									Help me first?
+									Okay
 								</h6>
 							</div>
 							<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
 						</div>
-						<div class="row d-none appear2 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm2">
-									Help me first?
-								</h6>
+						<div class="d-flex justify-content-end mr-3">
+							<div class=" appear my-2 text-center">
+								<div class="lavender x p-3 my-2 text-white">Hello</div>
 							</div>
-						</div>
-						<div class="row d-none appear3 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm3">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear4 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm4">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear5 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm5">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear6 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm6">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear7 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm7">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear8 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm8">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear9 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm9">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear10 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm10">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear11 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm11">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear12 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm12">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row d-none appear13 justify-content-end" >
-							<div class="lavender text-white py-2 float-right x my-1 mr-4">
-								<h6 class="m-2 dm13">
-									Help me first?
-								</h6>
-							</div>
-						</div>
-						<div class="row">
+					    </div>
+						<div class="row fixedTextBox bg-light">
 							<form 
-								class="form-inline mt-4 x"
+								class="form-inline x userTextBox"
 								name="userTexts"	
 							>
 
@@ -731,85 +652,90 @@
 		var i=1;
 		
 	     function texting() {
-				switch(i){
-				 case 1:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm1').text(k);
-		  				$('.appear1').removeClass('d-none');
-		  				$('.appear1').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=2;
-						break;
-				case 2:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm2').text(k);
-		  				$('.appear2').removeClass('d-none');
-		  				$('.appear2').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=3;
-						break;	
-				case 3:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm3').text(k);
-		  				$('.appear3').removeClass('d-none');
-		  				$('.appear3').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=4;
-						break;
-				case 4:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm4').text(k);
-		  				$('.appear4').removeClass('d-none');
-		  				$('.appear4').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=5;
-						break;		
-				case 5:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm5').text(k);
-		  				$('.appear5').removeClass('d-none');
-		  				$('.appear5').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=6;
-						break;		
-				case 6:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm6').text(k);
-		  				$('.appear6').removeClass('d-none');
-		  				$('.appear6').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=7;
-						break;	
-				case 7:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm7').text(k);
-		  				$('.appear7').removeClass('d-none');
-		  				$('.appear7').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=8;
-						break;	
-				case 8:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm8').text(k);
-		  				$('.appear8').removeClass('d-none');
-		  				$('.appear8').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=9;
-						break;		
-				case 9:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm9').text(k);
-		  				$('.appear9').removeClass('d-none');
-		  				$('.appear9').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=10;
-						break;	
-				case 10:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm10').text(k);
-		  				$('.appear10').removeClass('d-none');
-		  				$('.appear10').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=11;
-						break;	
-				case 11:var k=document.forms["userTexts"]["userMessag"].value;
-         				$('.dm11').text(k);
-		  				$('.appear11').removeClass('d-none');
-		  				$('.appear11').addClass('d-flex');
-          				document.forms["userTexts"]["userMessag"].value="";
-						i=12;
-						break;							
-			 }
+			var k=document.forms["userTexts"]["userMessag"].value;
+			$('.appear').append('<div class="lavender x p-3 my-2 text-white">'+k+'</var></div>'); 
+			document.forms["userTexts"]["userMessag"].value="";
+		    // document.getElementById('Elem').scrollTop += 10;
+  
+			// 	switch(i){
+			// 	 case 1:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm1').text(k);
+		  	// 			$('.appear1').removeClass('d-none');
+		  	// 			$('.appear1').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=2;
+			// 			break;
+			// 	case 2:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm2').text(k);
+		  	// 			$('.appear2').removeClass('d-none');
+		  	// 			$('.appear2').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=3;
+			// 			break;	
+			// 	case 3:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm3').text(k);
+		  	// 			$('.appear3').removeClass('d-none');
+		  	// 			$('.appear3').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=4;
+			// 			break;
+			// 	case 4:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm4').text(k);
+		  	// 			$('.appear4').removeClass('d-none');
+		  	// 			$('.appear4').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=5;
+			// 			break;		
+			// 	case 5:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm5').text(k);
+		  	// 			$('.appear5').removeClass('d-none');
+		  	// 			$('.appear5').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=6;
+			// 			break;		
+			// 	case 6:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm6').text(k);
+		  	// 			$('.appear6').removeClass('d-none');
+		  	// 			$('.appear6').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=7;
+			// 			break;	
+			// 	case 7:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm7').text(k);
+		  	// 			$('.appear7').removeClass('d-none');
+		  	// 			$('.appear7').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=8;
+			// 			break;	
+			// 	case 8:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm8').text(k);
+		  	// 			$('.appear8').removeClass('d-none');
+		  	// 			$('.appear8').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=9;
+			// 			break;		
+			// 	case 9:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm9').text(k);
+		  	// 			$('.appear9').removeClass('d-none');
+		  	// 			$('.appear9').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=10;
+			// 			break;	
+			// 	case 10:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm10').text(k);
+		  	// 			$('.appear10').removeClass('d-none');
+		  	// 			$('.appear10').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=11;
+			// 			break;	
+			// 	case 11:var k=document.forms["userTexts"]["userMessag"].value;
+         	// 			$('.dm11').text(k);
+		  	// 			$('.appear11').removeClass('d-none');
+		  	// 			$('.appear11').addClass('d-flex');
+          	// 			document.forms["userTexts"]["userMessag"].value="";
+			// 			i=12;
+			// 			break;							
+			//  }
 		 
 		 }
 		   	   

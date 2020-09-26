@@ -129,3 +129,15 @@ form{
 .colorLavender{
  color: #DD2a7b;
 }
+.chatScroll{
+  position: relative;
+  height: 500px;
+ overflow-y: scroll;
+ 
+}
+.fixedTextBox{
+  position: sticky;
+  bottom: 0;
+  /* background-color: black; */
+  
+}
