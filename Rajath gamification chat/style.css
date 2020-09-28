@@ -1,0 +1,143 @@
+.s1{
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+input{
+  background: none !important;
+  border-radius: 10px !important;
+  border: 3px solid !important;
+  height: 50px !important;
+  /* width: 31px !important; */
+}
+@media (max-width: 500px),(max-height: 600px) {
+ .form-control{
+  margin-left: 0em !important;
+ }
+ .messageBox{
+  position: relative;
+  top: 0.1em !important; 
+}
+
+}
+
+input:hover{
+  border-color: yellow !important;
+  transition: 0.35s !important;
+}
+form{
+  width: 460px !important;
+}
+.fp-controlArrow.fp-prev{
+  margin-left: 10%;
+}
+.fp-controlArrow.fp-next{
+  margin-right: 10%;
+}
+.s2{
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+.mBot{
+  width: 300px;
+
+}
+.boy{
+  width: 300px;
+  height: 800px;
+}
+.messageBox{
+  position: relative;
+  top: 10vh;
+}
+.chat{
+  right: 2em;
+  bottom: 1em;
+}
+.side-nav{
+  list-style: none;
+}
+
+
+.dialog{
+  position: relative !important;
+  right: 6rem !important;
+}
+.bigOstrich{
+  width: 380px;
+}
+.mBot_smol{
+  width: 200px;
+}
+.dialogFar{
+  position: relative !important;
+  right: 19rem !important;
+}
+.mBot_huge{
+  width: 700px;
+}
+.messageBox{
+  height: 8em !important;
+  width: 5em !important;
+}
+@media (max-width: 1024px),(max-height: 700px) {
+  .dialogFar{
+    position: relative !important;
+    right: 10rem !important;
+  }
+  .bigOstrich{
+    width: 340px;
+  }
+  .mBot_huge{
+    width: 500px;
+   
+  }
+.mape{
+  border-radius: 40px !important;
+}
+.rou{
+  position: relative;
+  bottom: 8em;
+  align-items: center !important;
+  right: 3.5em;
+}
+.dialog{
+  position: relative !important;
+  right: 0rem !important;
+}
+}
+.textApp{
+  
+  position: absolute;
+  bottom: 5rem;
+  right: 2rem;
+}
+.cht{
+  border-radius: 25px !important;
+}
+.lavender{
+  background-color:  #DD2a7b;
+}
+.colorLavender{
+ color: #DD2a7b;
+}
+.chatScroll{
+  position: relative;
+  height: 500px;
+ overflow-y: scroll;
+ 
+}
+.fixedTextBox{
+  position: sticky;
+  bottom: 0;
+  /* background-color: black; */
+  
+}
+.fa-arrow-left{
+  cursor: pointer;
+}

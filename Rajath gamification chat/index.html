@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<title>Gamification</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+		integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7c729127f1.js" crossorigin="anonymous"></script>
+	<link href="introjs.css" rel="stylesheet">
+	<link href="introjs-modern.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/intro.js@2.3.1/minified/introjs.min.css">
+</head>
+
+<body onload="checkRefresh()">
+	<div class="fullPage">
+		<div class="section s1 d-none">
+			<div class="container d-flex align-items-center justify-content-center my-5 ">
+				<form 
+					onsubmit=" return myFun()" 
+					method="POST" 
+					name="myForm"
+				>
+					<i
+						class="fab fa-10x fa-drupal text-light d-flex align-items-center justify-content-center py-4">
+					</i>
+					<div class="form-group row">
+						<label 
+							for="inputName3" 
+							class="col-sm-2 col-form-label text-light align-self-center "
+						>
+							Name
+						</label>
+						<div class="col-sm-10">
+							<input 
+								type="text" 
+								class="form-control border-light text-light p-0 pl-2" 
+								id="inputEmail3"
+								name="fname" value=""
+							>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label 
+							for="inputPassword3" 
+							class="col-sm-2 col-form-label text-light align-self-center"
+						>
+							Password
+						</label>
+						<div class="col-sm-10">
+							<input 
+								type="password" 
+								class="form-control border-light text-light p-0 pl-2"
+								id="inputPassword3" 
+								name="fpass"
+							>
+						</div>
+					</div>
+					<div class="d-flex justify-content-end">
+						<button 
+							type="submit" 
+							class="btn btn-light ml-3 submitt"
+						>
+							Sign in
+						</button>
+					</div>
+					
+				</form>
+			</div>
+		
+		</div>
+	<div class="section s2 d-none cintro" id="target">
+			<div class="row align-content-md-end rounded float-left side-nav position-relative my-5 py-4">
+				<div class="col-lg-12">
+					<ul class="side-nav position-relative">
+						<li 
+							data-step="1" 
+							data-intro="Profile picture of the player/Avatar" 
+							class="pb-2 filter-active"
+							href="#" 
+							role="button"
+						>
+							<img 
+								src="img_avatar.png" 
+								width="80" 
+								height="80" 
+								class="rounded-circle  mx-auto d-block"
+								alt="avatar-of-a-man"
+							>
+						</li>
+						<li data-toggle="modal" 
+							data-target="#exampleModal"
+						    data-step="2"
+							data-intro="Learning path or map :- shows where you has reached in this course "
+							class="pb-2" 
+							href="#" 
+							role="button"
+						>
+							<img 
+								src="map.png" 
+								width="80" 
+								height="80" 
+								class="rounded-circle  mx-auto d-block"
+								alt="map-of-path"
+							>
+						</li>
+						<li 
+							data-toggle="modal" 
+							data-target=".bd-example-modal-lg" 
+							data-step="3"
+							data-intro="Points counter :- Counts how many points you have accumulated so far in this course"
+							class="pb-2" 
+							href="#" 
+							role="button"
+						>
+							<img 
+								src="star.jpg" 
+								width="80" 
+								height="80" 
+								class="rounded-circle  mx-auto d-block"
+								alt="Points"
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="slide">
+				<div class="img1 rounded rounded-circle ">
+					<img 
+						src="download1.jpg"
+						width="100" 
+						height="100" 
+						class=" rounded-circle rou position-relative mx-auto d-block" 
+						alt="Modo-img"
+					>
+				</div>
+			</div>
+			<div class="slide 6">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4  test text-white">Today we will explore the jungle</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="slide 7">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4 text-white">I will show you how
+									robots are used in
+									jungles to care for
+									animals.</h3>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide 8">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4 text-white">And also take close-up
+									pictures of them, where
+									humans might be
+									challenged</h3>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide 9">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ss">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4 text-white">Click on the map to get started</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide 10" >
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row">
+								<div class="bg-danger rounded dialog">
+									<h3 class="p-4 text-white" >Meet our jungle photographer</h3>
+								</div>
+							</div>
+							<div class="row">
+								<img class="boy" src="boy.png">
+							</div>
+						</div>
+						
+					</div>
+				</div>	
+			</div>
+
+			<div class="slide 11" >
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row">
+								<div class="bg-danger rounded dialog">
+									<h3 class="p-4 text-white">Hi xxxx!!I will show you how to shoot animals real close using automated rovers.</h3>
+								</div>
+							</div>
+							<div class="row">
+								<img class="boy" src="boy.png">
+							</div>
+						</div>
+						
+					</div>
+				</div>	
+			</div>
+
+			<div class="slide 12" >
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="boy" src="boy.png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row">
+								<div class="bg-danger rounded dialog">
+									<h3 class="p-4 text-white">But first watch these lessons to get basic knowledge on robots.</h3>
+								</div>
+							</div>
+							<div class="row">
+								<img class="mBot" src="mBot (1).png">
+							</div>
+						</div>
+						
+					</div>
+				</div>	
+			</div>
+
+			<div class="slide 13-14" >
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6">
+							<div class="row m-4">
+								<div class="bg-danger rounded dialog">
+									<h3 class="p-4 text-white">In this lesson,you will learn about what is a robot and its various uses and how it can be assembled.Enjoy</h3>
+								</div>
+							</div>
+							<div class="row">
+								<iframe 
+									width="475rem" 
+									height="453rem" 
+									src="https://www.youtube.com/embed/i44IA8zm3vE" 
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								>
+								</iframe>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="boy" src="boy.png">
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="slide 15">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4 text-white">Great! You've completed 1st level of this path.You have earned 5000 points!Wow!</h3>
+							</div>
+						</div>
+					</div>
+			   </div>
+			</div>
+
+			<div class="slide 18">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6">
+							<img class="mBot" src="mBot (1).png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="bg-danger rounded dialog">
+								<h3 class="p-4 text-white">You can click on the map anytime to see how much you have progressed in the course</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide 19 ">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6">
+							<img class="mBot_smol" src="boy.png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row">
+								<div class="bg-danger rounded dialogFar">
+									<h5 class="p-4 text-white">See this ostrich,very dangerous to go closer.For this we use automated rover with high powered camera.</h5>
+								</div>
+							</div>
+							<div class="row">
+								<img src="ostrich.png" class="bigOstrich">
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="slide 20 ">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6">
+							<img class="mBot_smol" src="boy.png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row"><div class="bg-danger rounded dialogFar">
+								<h5 class="p-4 text-white">So, what is a rover?To know more,click on the video player.</h5>
+							</div>
+						</div>
+							<div class="row">
+								<img src="ostrich.png" class="bigOstrich">
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+
+			<div class="slide 22 ">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-6">
+							<img class="mBot_smol" src="boy.png">
+						</div>
+						<div class="col-lg-6 col-md-6 ">
+							<div class="row"><div class="bg-danger rounded dialogFar">
+								<h5 class="p-4 text-white">Hey,if you get stuck or need help,click on the chat button.There's always someone to help you.</h5>
+							</div>
+						</div>
+							<div class="row">
+								<img src="ostrich.png" class="bigOstrich">
+							</div>
+						</div>
+					
+					</div>
+				</div> 
+			</div>
+
+			<div class="slide 24">
+			  	<div class="container">
+               		<div class="row">
+				   		<div class="col-lg-6 col-md-6">
+							<img class="mBot_huge" src="boy.png">
+				   		</div>
+				   		<div class="col-lg-6 col-md-6">
+						<div class="row bg-danger rounded dialog my-4 text-white" >
+							<h5 class="p-4">I hope you understood the concept of auto rovers.Good luck with your journey to the next level.</h5>
+						</div>
+					</div>
+			  	</div>	
+			</div>
+			</div>
+		
+		</div>
+	</div>
+	<div class="chatButton">
+		<img 
+			data-step="4" 
+			data-intro="ChatBot :- Any questions regarding anything can be asked hear :)"
+			src="chat.jpg" 
+			width="80" 
+			height="80" 
+			class="rounded-circle  chat position-fixed d-block" 
+			role="button" 
+			alt="Chat-icon"
+			data-toggle="modal"
+			data-target="#exampleModalLong"
+		>
+	</div>
+	<!-- Modal for chat-->
+	<div 
+		class="modal fade" 
+		id="exampleModalLong" 
+		tabindex="-1" 
+		role="dialog" 
+		aria-labelledby="exampleModalLongTitle" 
+		aria-hidden="true"
+		id="chat-window"
+	>
+		<div 
+			class="modal-dialog textApp " 
+			role="document"
+		>
+		  <div class="modal-content cht chatScroll"
+		  	   
+		  >
+			 <div class="modal-header lavender cht sticky-top">
+					<h5 class="modal-title text-white" 
+						id="exampleModalLabel"
+						
+					><i class="fas fa-arrow-left mr-2" data-dismiss="modal"></i>
+						Michelle
+					</h5>
+			     </div>	
+					<div class="container" >
+						<div class="col">
+							<div class="row d-flex justify-content-end my-2">
+								<div class="lavender text-white py-2 my-4 cht">
+									<h6 class="m-2 d-block">
+										Hi,I need help
+									</h6>
+								
+									</div>
+								<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
+							</div>
+						</div>
+						<div class="row my-2">
+							<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
+								<div class="lavender text-white py-2 cht my-4 ">
+									<h6 class="m-2">
+									Tell me more about yourself
+								</h6>
+							</div>
+						</div>
+						<div class="row d-flex appear1 justify-content-end mt-2" >
+							<div class="lavender text-white py-2 float-right cht">
+								<h6 class="m-2 dm1">
+									Okay
+								</h6>
+							</div>
+							<div class="d-flex align-self-center mx-2 colorLavender"><i class="fas fa-user-alt"></i></div>
+						</div>
+						<div class="d-flex justify-content-end mr-3">
+							<div class=" appear my-2 text-center">
+								<div class="lavender cht p-3 my-2 text-white">Hello</div>
+							</div>
+					    </div>
+						<div class="row fixedTextBox bg-light">
+							<form 
+								class="form-inline cht userTextBox"
+								name="userTexts"	
+							>
+
+								<div class="form-group mx-sm-3 mb-2">
+								  <label 
+									  for="inputPassword2" 
+									  class="sr-only">
+									  	Password
+								   </label>
+								  <input 
+								    name="userMessage"
+								  	type="text" 	
+									class="form-control textBox_message border-0 shadow-lg myText" 
+									id="inputPassword2" 
+									placeholder="Enter Message"
+								>
+								</div>
+								<i class=" btn fas fa-2x fa-paper-plane colorLavender" onclick="texting()"></i>
+						  </form>
+						</div>
+					</div>
+				</div>		
+			</div>	
+		</div>
+	  </div> 
+
+  <!-- Modal for map way -->
+  <div 
+	  class="modal fade mape" 
+	  id="exampleModal" 
+	  tabindex="-1" 
+	  role="dialog" 
+	  aria-labelledby="exampleModalLabel" 
+	  aria-hidden="true"
+	>
+	<div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content mape">
+		<img 
+			class="mape" 
+			src="learing-path.jpg" 
+			alt="map-of-path" 
+			width="800" 
+			height="450"
+		>
+	  </div>
+	</div>
+  </div>
+
+   <!--Modal for points-->
+	<div 
+		class="modal fade bd-example-modal-lg" 
+		tabindex="-1" 
+		role="dialog" 
+		aria-labelledby="myLargeModalLabel"
+		aria-hidden="true"
+	>
+		<div 
+			class="modal-dialog modal-lg modal-dialog-centered" 
+			role="document"
+		>
+			<div class="modal-content rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">
+						Dashboard
+					</h5>
+					<button 
+						type="button" 
+						class="close" 
+						data-dismiss="modal" 
+						aria-label="Close"
+					>
+						<span aria-hidden="false">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row my-7 ">
+						<div class="col-lg-4 d-flex align-items-center justify-content-center">
+							<div class="card shadow mb-0" style="width: 12rem;">
+								<div class="card-body py-1">
+									<div class="row justify-content-center">
+										<div class="col">
+											<h5 class="card-title">Your Points</h5>
+
+											<h1 class="">550 pts</h1>
+											<p>
+												<button 
+													type="button"
+													class="btn btn-outline-dark align-items-center bnt"
+												>
+													Spend Points
+													
+												</button>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-8 d-flex align-items-center justify-content-center">
+							<div class="card shadow mb-0" style="width: 37rem;">
+								<div class="card-body py-0">
+									<div class="row justify-content-center">
+										<img 
+											src="pointsbd.jpg" 
+											width="430" 
+											height="190" 
+											class="" 
+											alt="Points"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+		integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+		crossorigin="anonymous"></script>
+	<script>
+		new fullpage('.fullPage', {
+			autoScrolling: true,
+			navigation: false,
+			showActiveTooltip: true,
+			slidesNavigation: true,
+		})
+		
+		function myFun() {
+			var username = document.forms["myForm"]["fname"].value;
+			var pass = document.forms["myForm"]["fpass"].value;
+            
+			if (username == "" || pass == "") {
+				alert('No blank values allowed');
+				return false;
+
+			} else if (username != "modouser" || pass != "zysk@123") {
+				alert('Invalid credentials');
+
+			} else {
+				
+				$(".s1").addClass("d-none");
+				$(".s2").removeClass("d-none");
+				localStorage.setItem("loggedIn","yes");
+				var introguide = introJs();
+				introguide.start()
+			}
+			return false;
+		}
+
+		function checkRefresh() {
+			
+            if(localStorage.getItem('loggedIn')=='yes') {
+				$(".s1").addClass("d-none");
+				$(".s2").removeClass("d-none");
+				var introguide = introJs();
+				introguide.start()
+			}
+			  else {
+				$(".s1").removeClass("d-none");
+			  }
+		}
+			
+		var i=1;
+		
+	     function texting() {
+			var k=document.forms["userTexts"]["userMessage"].value;
+			if (k==""){
+				return;
+			}
+			else{
+			$('.appear').append('<div class="lavender cht p-3 my-2 text-white">'+k+'</var></div>'); 
+			document.forms["userTexts"]["userMessage"].value="";
+			}
+		 }
+		   	   
+		 chatWindow = document.getElementById('chat-window'); 
+         var xH = chatWindow.scrollHeight; 
+         chatWindow.scrollTo(0, xH);
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+	<link src="http://cdn.jsdelivr.net/npm/intro.js@2.9.3/minified/introjs.min.js">
+	<script src="intro.js"></script>
+	
+
+
+</body>
+
+</html>
