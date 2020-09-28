@@ -649,12 +649,22 @@
 			  }
 		}
 			
-		var i=1;
+		$('.userMessag').keyup(function (e) {
+			if(e.keyCode==13){
+			   e.preventDefault();
+			   texting();
+			   return false;
+			}   
+		})
 		
 	     function texting() {
-			var k=document.forms["userTexts"]["userMessag"].value;
-			$('.appear').append('<div class="lavender x p-3 my-2 text-white">'+k+'</var></div>'); 
-			document.forms["userTexts"]["userMessag"].value="";
+			 while(document.forms["userTexts"]["userMessag"].value!=""){
+				var k=document.forms["userTexts"]["userMessag"].value;
+				$('.appear').append('<div class="lavender x p-3 my-2 text-white xxxx">'+k+'</var></div>'); 
+				document.forms["userTexts"]["userMessag"].value="";
+				$('.chatScroll').animate({scrollTop:1000000},800);
+			 }
+			
 		    // document.getElementById('Elem').scrollTop += 10;
   
 			// 	switch(i){

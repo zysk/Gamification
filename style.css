@@ -141,3 +141,6 @@ form{
   /* background-color: black; */
   
 }
+.fa-arrow-left{
+  cursor: pointer;
+}
